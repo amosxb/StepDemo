@@ -11,6 +11,7 @@ import com.example.administrator.stepdemo.base.BasePresenter;
  */
 public class AboutActivity extends BaseActivity {
 
+
     @Override
     protected int contentViewId() {
         return R.layout.activity_about;
