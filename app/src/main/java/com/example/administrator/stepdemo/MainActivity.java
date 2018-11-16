@@ -63,6 +63,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     @Override
     protected void initView() {
 
+
         //设置缓存3个界面
         vpMainContent.setOffscreenPageLimit(3);
 
