@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EmptyLayout start -->
+    <declare-styleable name="FrameEmptyLayout">
+        <attr name="error_image" format="reference" />
+        <attr name="error_text" format="string" />
+        <attr name="error_retry_text" format="string" />
+
+        <attr name="empty_image" format="reference" />
+        <attr name="empty_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loading_view_size" format="dimension" />
+        <attr name="android:color" />
+    </declare-styleable>
+    <attr name="LoadingStyle" format="reference" />
+
+    <!--金额 样式  元大 角分小 $25.33-->
+    <declare-styleable name="MoneyView">
+        <!--金额-->
+        <attr name="money_text" format="string" />
+        <!--金额颜色-->
+        <attr name="money_color" format="color" />
+        <!--元大小-->
+        <attr name="yuan_size" format="dimension" />
+        <!--分大小-->
+        <attr name="cent_size" format="dimension" />
+        <!--前缀文本-->
+        <attr name="prefix_text" format="string" />
+        <!--前缀大小-->
+        <attr name="prefix_size" format="dimension" />
+        <!--前缀颜色-->
+        <attr name="prefix_color" format="color" />
+        <!--前缀右边距-->
+        <attr name="prefix_padding" format="dimension" />
+        <!--小数点左边距-->
+        <attr name="point_padding_left" format="dimension" />
+        <!--小数点右边距-->
+        <attr name="point_padding_right" format="dimension" />
+        <!--是否使用千分符-->
+        <attr name="grouping" format="boolean" />
+        <!--是否使用前缀-->
+        <attr name="isUserPrefix" format="boolean" />
+        <!--是否设置粗体字-->
+        <attr name="isUserBold" format="boolean" />
+    </declare-styleable>
+</resources>

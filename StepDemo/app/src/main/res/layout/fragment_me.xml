@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="66px"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_me_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_me_item_bg"
+            android:paddingLeft="84px"
+            android:paddingRight="84px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="石原里美"
+                    android:textColor="@color/color_333333"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="用户名"
+                    android:textColor="#80333333"
+                    android:textSize="20px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3532295"
+                    android:textColor="@color/color_333333"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_ids"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="ID号"
+                    android:textColor="#80333333"
+                    android:textSize="20px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView
+            android:layout_width="122px"
+            android:layout_height="122px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_head" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_me_scan"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_me_item_scan_bg"
+        android:paddingLeft="32px"
+        android:paddingRight="32px">
+
+        <ImageView
+            android:id="@+id/iv_me_scan"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_me_scan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:layout_toRightOf="@id/iv_me_scan"
+            android:text="我的二维码"
+            android:textColor="@color/color_333333"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include
+        layout="@layout/common_me_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_me_about"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="32px"
+        android:paddingRight="32px">
+
+        <ImageView
+            android:id="@+id/iv_me_about"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_me_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:layout_toRightOf="@id/iv_me_about"
+            android:text="关于我们"
+            android:textColor="@color/color_333333"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include
+        layout="@layout/common_me_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_me_setting"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/shape_me_item_setting_bg"
+        android:paddingLeft="32px"
+        android:paddingRight="32px">
+
+        <ImageView
+            android:id="@+id/iv_me_setting"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_me_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:layout_toRightOf="@id/iv_me_setting"
+            android:text="系统设置"
+            android:textColor="@color/color_333333"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/arl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            android:paddingTop="112px">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="109px"
+                    android:background="@drawable/shape_me_item_bg"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="119px"
+                        android:orientation="vertical"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px">
+
+                        <TextView
+                            style="@style/CommonDfTvStyle"
+                            android:layout_marginLeft="28px"
+                            android:layout_marginTop="111px"
+                            android:text="@string/login_account" />
+
+                        <EditText
+                            style="@style/CommonEtStyle"
+                            android:layout_marginTop="32px"
+                            android:hint="@string/login_please_enter_phone_number"
+                            android:paddingLeft="27px" />
+
+                        <TextView
+                            style="@style/CommonDfTvStyle"
+                            android:layout_marginLeft="28px"
+                            android:layout_marginTop="51px"
+                            android:text="@string/login_password" />
+
+                        <EditText
+                            style="@style/CommonEtStyle"
+                            android:layout_marginTop="32px"
+                            android:hint="@string/login_please_enter_your_password"
+                            android:paddingLeft="@dimen/dimen_27px" />
+
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40px"
+                            android:paddingLeft="17px"
+                            android:paddingRight="17px">
+
+                            <TextView
+                                style="@style/CommonDfTvStyle.CommonSubDfTvStyle"
+                                android:text="@string/login_forget_password" />
+
+                            <TextView
+                                android:id="@+id/tv_register"
+                                style="@style/CommonDfTvStyle.CommonSubDfTvStyle"
+                                android:layout_alignParentRight="true"
+                                android:text="@string/login_sign_up_now"
+                                android:textColor="@color/color_0d2067" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_login"
+                            style="@style/CommonTvStyle"
+                            android:layout_marginTop="@dimen/dimen_82px"
+                            android:text="@string/login" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <ImageView
+                    android:layout_width="240px"
+                    android:layout_height="240px"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_login_logo" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

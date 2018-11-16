@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/arl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="vertical"
+            android:paddingTop="112px">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="119px"
+                    android:background="@drawable/shape_me_item_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        style="@style/CommonDfTvStyle"
+                        android:layout_marginLeft="28px"
+                        android:layout_marginTop="76px"
+                        android:text="@string/register_cellphone_number" />
+
+                    <EditText
+                        style="@style/CommonEtStyle"
+                        android:layout_marginTop="32px"
+                        android:hint="@string/register_please_enter_the_phone_number"
+                        android:paddingLeft="27px" />
+
+                    <TextView
+                        style="@style/CommonDfTvStyle"
+                        android:layout_marginLeft="28px"
+                        android:layout_marginTop="41px"
+                        android:text="@string/register_verification_code" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32px">
+
+                        <EditText
+                            style="@style/CommonEtStyle"
+                            android:hint="@string/register_please_enter_verification_code"
+                            android:paddingLeft="27px" />
+
+                        <TextView
+                            android:layout_width="166px"
+                            android:layout_height="66px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10px"
+                            android:background="@drawable/shape_my_qr_cope_bottom_btn_fillet"
+                            android:gravity="center"
+                            android:text="@string/register_get_verification_code"
+                            android:textColor="@color/color_0d2067"
+                            android:textSize="26px" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <TextView
+                        style="@style/CommonDfTvStyle"
+                        android:layout_marginLeft="28px"
+                        android:layout_marginTop="38px"
+                        android:text="@string/register_password" />
+
+                    <EditText
+                        style="@style/CommonEtStyle"
+                        android:layout_marginTop="32px"
+                        android:hint="@string/register_please_enter_your_password"
+                        android:paddingLeft="27px" />
+
+                    <TextView
+                        style="@style/CommonDfTvStyle"
+                        android:layout_marginLeft="28px"
+                        android:layout_marginTop="38px"
+                        android:text="@string/register_repeat_password" />
+
+                    <EditText
+                        style="@style/CommonEtStyle"
+                        android:layout_marginTop="32px"
+                        android:hint="@string/register_please_enter_your_password_again"
+                        android:paddingLeft="27px" />
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        style="@style/CommonTvStyle"
+                        android:layout_marginTop="@dimen/dimen_45px"
+                        android:text="@string/register" />
+
+                    <TextView
+                        style="@style/CommonDfTvStyle.CommonSubDfTvStyle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginTop="@dimen/dimen_27px"
+                        android:text="@string/register_already_have_an_account_sign_in_now"
+                        android:textColor="@color/color_0d2067" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <ImageView
+                    android:layout_width="240px"
+                    android:layout_height="240px"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_login_logo" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>
